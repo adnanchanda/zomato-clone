@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import React from "react";
+import { NativeBaseProvider, Text, Center } from "native-base";
+import LoginPage from './components/LoginPage'
 
 export default function App() {
   return (
-    <View >
-      <Text>awefoj</Text>
-    </View>
+    <NativeBaseProvider>
+      <LoginPage />
+    </NativeBaseProvider>
   );
 }
-
